@@ -1,0 +1,1 @@
+This demo illustrates how to create labels of any pre-defined size to print them using a specific label printer.

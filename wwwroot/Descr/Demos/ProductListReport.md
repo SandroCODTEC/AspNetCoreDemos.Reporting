@@ -1,0 +1,1 @@
+This demo illustrates how to create complex real-life reports with XtraReports. This example contains the **Products List** report built from the **Northwind** database.

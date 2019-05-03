@@ -1,0 +1,1 @@
+This demo illustrates a sample profit and loss statement created using vertical bands. These bands allow you to create a report where record fields are arranged vertically and records are printed horizontally from left to right.

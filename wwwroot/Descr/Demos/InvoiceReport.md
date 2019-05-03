@@ -1,0 +1,1 @@
+This demo illustrates a sample invoice created using DevExpress Report Designer. This invoice is created without writing a single line of code.

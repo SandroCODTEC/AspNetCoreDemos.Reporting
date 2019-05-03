@@ -1,0 +1,53 @@
+[
+
+  {
+    "outputFileName": "wwwroot/bundle.min.css",
+    "inputFiles": [
+      "wwwroot/css/dx.common.css",
+      "wwwroot/css/jquery-ui-1.12.min.css",
+      "wwwroot/DemoShell/hljs/highlightjs.gh.css"
+    ]
+  },
+
+  {
+    "outputFileName": "wwwroot/bundle-reporting.min.css",
+    "inputFiles": [
+      "wwwroot/xtrareportsjs/css/dx-analytics.common.min.css",
+      "wwwroot/xtrareportsjs/css/dx-querybuilder.min.css",
+      "wwwroot/xtrareportsjs/css/dx-webdocumentviewer.min.css",
+      "wwwroot/xtrareportsjs/css/dx-reportdesigner.min.css",
+      "wwwroot/css/report-designer-button.css"
+    ]
+  },
+
+  {
+    "outputFileName": "wwwroot/bundle.min.js",
+    "inputFiles": [
+      "wwwroot/js/jquery.min.js",
+      "wwwroot/js/jquery-ui.1.12.min.js",
+      "wwwroot/js/knockout.js",
+      "wwwroot/js/dx.all.js",
+      "wwwroot/js/cldr.js",
+      "wwwroot/js/cldr/cldr.event.js",
+      "wwwroot/js/cldr/cldr.supplemental.js",
+      "wwwroot/js/cldr/cldr.unresolved.js",
+      "wwwroot/js/globalize.js",
+      "wwwroot/js/globalize/globalize.currency.js",
+      "wwwroot/js/globalize/globalize.message.js",
+      "wwwroot/js/globalize/globalize.number.js",
+      "wwwroot/js/globalize/globalize.date.js",
+      "wwwroot/js/ace/ace.js",
+      "wwwroot/js/ace/ext-language_tools.js",
+      "wwwroot/js/ace/snippets/text.js",
+      "wwwroot/js/ace/theme-ambiance.js",
+      "wwwroot/js/ace/theme-dreamweaver.js",
+      "wwwroot/xtrareportsjs/js/dx-analytics-core.js",
+      "wwwroot/xtrareportsjs/js/dx-querybuilder.js",
+      "wwwroot/xtrareportsjs/js/dx-webdocumentviewer.js",
+      "wwwroot/xtrareportsjs/js/dx-reportdesigner.js",
+      "wwwroot/DemoShell/hljs/highlight.pack.js",
+      "wwwroot/js/report-designer-button.js"
+    ]
+  }
+
+]

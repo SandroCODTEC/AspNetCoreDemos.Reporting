@@ -1,0 +1,1 @@
+This demo illustrates how to combine different reports into one report. Note that page orientation in the resulting document may be different for different pages, as well as the page size and other settings.

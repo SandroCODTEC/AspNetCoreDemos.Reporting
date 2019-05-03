@@ -1,0 +1,1 @@
+With XtraReports, you can add an unlimited number of [calculated fields](http://help.devexpress.com/#XtraReports/CustomDocument4813) based on the values of data fields stored in a data source. This demo enables you to choose the [expression](http://help.devexpress.com/#WindowsForms/CustomDocument6212) of a calculated field displayed in the last column.

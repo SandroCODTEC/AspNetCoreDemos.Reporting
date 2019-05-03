@@ -1,0 +1,1 @@
+This demo illustrates how to use the [XRChart](http://help.devexpress.com/#XtraReports/clsDevExpressXtraReportsUIXRCharttopic) control in XtraReports. In this report, every detail band contains a Bar chart, which shows **Products** for a specific **Category**.

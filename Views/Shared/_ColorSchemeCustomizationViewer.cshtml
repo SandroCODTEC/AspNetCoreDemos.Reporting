@@ -1,0 +1,50 @@
+﻿@using System.IO
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.AspNetCore.Http.Extensions;
+@using Microsoft.Extensions.Primitives;
+@inject IHostingEnvironment hosting
+@model string
+
+<script type="text/javascript">
+    (function() {
+        window.LESS_RESOURCE_PATH = "@Url.Content("~/js/theming/Less_themes/")";
+        window.ICONS_RESOURCE_PATH = "@Url.Content("~/Content/ThemeIcons/")";
+    })();
+</script>
+<script src="@Url.Content("~/js/theming/less.min.js")"></script>
+<script src="@Url.Content("~/js/theming/beautify-css.js")"></script>
+<script src="@Url.Content("~/js/theming/jszip.min.js")"></script>
+<script src="@Url.Content("~/js/theming/index.js")" asp-append-version="true"></script>
+<script src="@Url.Content("~/js/report-viewer.js")" asp-append-version="true"></script>
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/js/theming/index.css")" />
+@Html.Raw(File.ReadAllText(hosting.WebRootPath + "/js/theming/ThemingTemplates.html"))
+
+@{
+    bool isDesigner = Context.Request.Query.ContainsKey("ShowDesigner");
+}
+
+<div class="wrapper">
+    <div class="report-designer-preview" style="position: relative; min-height: 900px; overflow: hidden;">
+        <div id="theming_demo_load_panel"></div>
+        @if(isDesigner) {
+            @(Html.DevExpress().ReportDesigner("reportDesigner")
+                .ClientSideEvents(events => {
+                    events.CustomizeElements("customizeDesignerElements");
+                    events.BeforeRender("disposeOnUnload");
+                })
+                .Height("1000px")
+                .Bind(Model))
+        } else {
+            @(Html.DevExpress().WebDocumentViewer("viewer")
+                .ClientSideEvents(events => {
+                    events.BeforeRender("disposeOnUnload");
+                    events.CustomizeElements("customizeViewerElements");
+                })
+                .Height("1000px")
+                .Bind(Model))
+        }
+    </div>
+</div>
+<script src="@Url.Content("~/js/theming/loadPanel.js")" asp-append-version="true"></script>
+
+@await Html.PartialAsync("_ReportDesignerViewerToggleButton", ViewContext.RouteData.Values["action"])

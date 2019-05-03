@@ -1,0 +1,1 @@
+This demo illustrates how to incorporate [shapes](http://help.devexpress.com/#XtraReports/CustomDocument2656) into your report using the [XRShape](http://help.devexpress.com/#XtraReports/clsDevExpressXtraReportsUIXRShapetopic) control that is shipped with the XtraReports suite.

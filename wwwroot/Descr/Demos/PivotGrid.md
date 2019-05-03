@@ -1,0 +1,1 @@
+This demo illustrates a sample cross-tab Summary Sales report. To create such a report, use the XRPivotGrid control and bind it to a data source.

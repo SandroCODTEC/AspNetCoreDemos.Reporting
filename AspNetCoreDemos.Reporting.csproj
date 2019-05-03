@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UserSecretsId>bc015858-d2eb-4fec-baeb-e1d5dd30b933</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="BuildBundlerMinifier" Version="2.8.391" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.*" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.1.*" />
+    <PackageReference Include="Microsoft.NETCore.Platforms" Version="2.1.*" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.1.*" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.1.*" />
+    <PackageReference Include="CommonMark.NET" Version="0.15.1" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.109.0" />
+    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="18.2.8" />
+  </ItemGroup>
+    <ItemGroup>
+        <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.*" />
+    </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="**" />
+    <Content Remove="**" />
+    <EmbeddedResource Remove="**" />
+    <None Remove="**" />
+    <Compile Include="**\*.cs" Exclude="obj\**\*.cs" />
+    <Content Include="wwwroot\**\*.*" />
+    <Content Include="Views\**\*.*" />
+    <Content Include="DemoShell\Views\**\*.*" />
+    
+    <Content Include="*.db" />
+    <Content Include="*.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotnetPublishFiles Include="wwwroot/**;*.db;*.json;*.xlsx">
+        <DestinationRelativePath>%(RelativeDir)%(Filename)%(Extension)</DestinationRelativePath>
+    </DotnetPublishFiles>
+    <DotnetPublishFiles Include="**/*.cs;**/*.cshtml">
+        <DestinationRelativePath>Sources/%(RelativeDir)%(Filename)%(Extension).txt</DestinationRelativePath>
+    </DotnetPublishFiles>    
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\AnchorVertical\Report.repx" />
+    <EmbeddedResource Include="Reports\BarCodes\BarCodeTypesReport.repx" />
+    <EmbeddedResource Include="Reports\BarCodes\ProductLabelsReport.repx" />
+    <EmbeddedResource Include="Reports\CachedDocumentSource\ReportWeb.repx" />
+    <EmbeddedResource Include="Reports\CalculatedFields\Report.repx" />
+    <EmbeddedResource Include="Reports\CharacterComb\Report.repx" />
+    <EmbeddedResource Include="Reports\Charts\Report.repx" />
+    <EmbeddedResource Include="Reports\CrossBandControls\Report.repx" />
+    <EmbeddedResource Include="Reports\CustomDraw\Report.repx" />
+    <EmbeddedResource Include="Reports\DrillDown\Report.repx" />
+    <EmbeddedResource Include="Reports\FormattingRules\Report.repx" />
+    <EmbeddedResource Include="Reports\IListDataSource\Report.repx" />
+    <EmbeddedResource Include="Reports\InteractiveSorting\Report.repx" />
+    <EmbeddedResource Include="Reports\MailMerge\Report.repx" />
+    <EmbeddedResource Include="Reports\MasterDetailReport\Report.repx" />
+    <EmbeddedResource Include="Reports\MultiColumnReport\Report.repx" />
+    <EmbeddedResource Include="Reports\NorthwindTraders\CatalogReport.repx" />
+    <EmbeddedResource Include="Reports\NorthwindTraders\InvoiceReport.repx" />
+    <EmbeddedResource Include="Reports\NorthwindTraders\ProductListReport.repx" />
+    <EmbeddedResource Include="Reports\Overview\Report.repx" />
+    <EmbeddedResource Include="Reports\PivotGridAndChart\Report.repx" />
+    <EmbeddedResource Include="Reports\PivotGrid\Report.repx" />
+    <EmbeddedResource Include="Reports\ProfitAndLoss\Report.repx" />
+    <EmbeddedResource Include="Reports\Shape\Report.repx" />
+    <EmbeddedResource Include="Reports\ShrinkGrow\Report.repx" />
+    <EmbeddedResource Include="Reports\SideBySideReports\EmployeeComparisonReport.repx" />
+    <EmbeddedResource Include="Reports\SideBySideReports\EmployeeOrdersReport.repx" />
+    <EmbeddedResource Include="Reports\Sparkline\Report.repx" />
+    <EmbeddedResource Include="Reports\Subreports\DetailReport.repx" />
+    <EmbeddedResource Include="Reports\Subreports\MasterReport.repx" />
+    <EmbeddedResource Include="Reports\SwissQRBill\SwissQRBill.repx" />
+    <EmbeddedResource Include="Reports\TableReport\Report.repx" />
+    <EmbeddedResource Include="Reports\TreeView\Report.repx" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    
+    
+    <None Include="NOTICE">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Questions.xlsx" />
+    <EmbeddedResource Include="Reports\EmployeePerformanceReview\Report.repx" />
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Reports\CachedDocumentSource\ReportWeb.cs">
+      <DependentUpon>ReportWeb.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CachedDocumentSource\ReportWeb.Designer.cs">
+      <DependentUpon>ReportWeb.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\IListDataSource\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\IListDataSource\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>  
+    <Compile Update="Reports\AnchorVertical\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\AnchorVertical\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\BarCodes\BarCodeTypesReport.cs">
+      <DependentUpon>BarCodeTypesReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\BarCodes\BarCodeTypesReport.Designer.cs">
+      <DependentUpon>BarCodeTypesReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\BarCodes\ProductLabelsReport.cs">
+      <DependentUpon>ProductLabelsReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\BarCodes\ProductLabelsReport.Designer.cs">
+      <DependentUpon>ProductLabelsReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CalculatedFields\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CalculatedFields\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CharacterComb\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CharacterComb\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Charts\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Charts\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CrossBandControls\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CrossBandControls\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CustomDraw\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CustomDraw\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\DrillDown\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\DrillDown\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\FormattingRules\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\FormattingRules\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\InteractiveSorting\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\InteractiveSorting\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\MailMerge\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\MailMerge\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\MasterDetailReport\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\MasterDetailReport\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\MultiColumnReport\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\MultiColumnReport\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\MultiColumnReport\DataSource.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>    
+    <Compile Update="Reports\NorthwindTraders\CatalogReport.cs">
+      <DependentUpon>CatalogReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\NorthwindTraders\CatalogReport.Designer.cs">
+      <DependentUpon>CatalogReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\NorthwindTraders\InvoiceReport.cs">
+      <DependentUpon>InvoiceReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\NorthwindTraders\InvoiceReport.Designer.cs">
+      <DependentUpon>InvoiceReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\NorthwindTraders\ProductListReport.cs">
+      <DependentUpon>ProductListReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\NorthwindTraders\ProductListReport.Designer.cs">
+      <DependentUpon>ProductListReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\PivotGridAndChart\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\PivotGridAndChart\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\PivotGrid\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\PivotGrid\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\ProfitAndLoss\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\ProfitAndLoss\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\ProfitAndLoss\Data.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Shape\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Shape\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\ShrinkGrow\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\ShrinkGrow\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\SideBySideReports\EmployeeComparisonReport.cs">
+      <DependentUpon>EmployeeComparisonReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\SideBySideReports\EmployeeComparisonReport.Designer.cs">
+      <DependentUpon>EmployeeComparisonReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\SideBySideReports\EmployeeOrdersReport.cs">
+      <DependentUpon>EmployeeOrdersReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\SideBySideReports\EmployeeOrdersReport.Designer.cs">
+      <DependentUpon>EmployeeOrdersReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Sparkline\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Sparkline\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Subreports\DetailReport.cs">
+      <DependentUpon>DetailReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Subreports\DetailReport.Designer.cs">
+      <DependentUpon>DetailReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Subreports\MasterReport.cs">
+      <DependentUpon>MasterReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Subreports\MasterReport.Designer.cs">
+      <DependentUpon>MasterReport.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\SwissQRBill\SwissQRBill.cs">
+      <DependentUpon>SwissQRBill.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\SwissQRBill\SwissQRBill.Designer.cs">
+      <DependentUpon>SwissQRBill.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\TableReport\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\TableReport\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Overview\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Overview\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\TreeView\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\TreeView\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\EmployeePerformanceReview\Report.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\EmployeePerformanceReview\Report.Designer.cs">
+      <DependentUpon>Report.repx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+   <Folder Include="wwwroot\Descr\Demos\" />
+ </ItemGroup>
+</Project>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="18.2.0.0" Ref="1" ControlType="XtraReportsDemos.Overview.Report, DevExpress.DemoReports.v18.2, Version=18.2.0.0, Culture=neutral, PublicKeyToken=4c3bc44151be4b47" Name="OverviewReport" DisplayName="Overview" Margins="0, 0, 15, 14" PaperKind="Custom" PageWidth="520" PageHeight="300" Version="18.2" RequestParameters="false" DataMember="Employees" DataSource="#Ref-0">
+  <Bands>
+    <Item1 Ref="2" ControlType="DetailBand" Name="Detail" HeightF="188.5417" TextAlignment="TopLeft" Padding="0,0,0,0,100">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRPageBreak" Name="xrPageBreak1" LocationFloat="0, 186.5417" />
+        <Item2 Ref="4" ControlType="XRTable" Name="xrTable1" TextAlignment="MiddleJustify" SizeF="497.9968,69.17" LocationFloat="12.00004, 91.20834" Padding="0,0,0,0,96">
+          <Rows>
+            <Item1 Ref="5" ControlType="XRTableRow" Name="xrTableRow1" Weight="1" TextAlignment="TopLeft" Font="Tahoma, 8.25pt" Padding="0,0,0,0,96">
+              <Cells>
+                <Item1 Ref="6" ControlType="XRTableCell" Name="xrTableCell1" Weight="0.1869154328505041" Text="About:" TextAlignment="TopLeft" Font="Tahoma, 9pt, style=Bold, charSet=0" ForeColor="White" BackColor="255,109,140,89" Padding="11,6,6,4,100">
+                  <StylePriority Ref="7" UseFont="false" />
+                </Item1>
+                <Item2 Ref="8" ControlType="XRTableCell" Name="xrTableCell2" Weight="0.81308456714949584" CanGrow="false" Multiline="true" Text="[Notes]" TextAlignment="TopLeft" Font="Tahoma, 9pt" BackColor="255,240,237,218" Padding="9,6,4,4,100" BorderColor="White" Borders="Left" BorderWidth="4">
+                  <StylePriority Ref="9" UseFont="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="10" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="11" ControlType="XRLabel" Name="xrLabel11" CanShrink="true" Text="[Country], [City], [Address]" TextAlignment="MiddleJustify" SizeF="401.17,24.42" LocationFloat="108.8332, 163.9584" Font="Tahoma, 9pt, charSet=0" BackColor="255,240,237,218" Padding="9,6,4,4,100">
+          <StylePriority Ref="12" UseFont="false" UseBackColor="false" UsePadding="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="13" ControlType="XRLabel" Name="xrLabel9" CanShrink="true" Text="[BirthDate!dddd, MMMM d, yyyy]" TextAlignment="MiddleJustify" SizeF="401.17,24.42" LocationFloat="108.8302, 63.99998" Font="Tahoma, 9pt, charSet=0" BackColor="255,240,237,218" Padding="9,6,4,4,100">
+          <StylePriority Ref="14" UseFont="false" UseBackColor="false" UsePadding="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="15" ControlType="XRLabel" Name="xrLabel8" CanShrink="true" Text="[FirstName] [LastName]" TextAlignment="MiddleJustify" SizeF="401.17,24.42" LocationFloat="108.8333, 7.999992" Font="Tahoma, 9pt, charSet=0" BackColor="255,240,237,218" Padding="9,6,4,4,100">
+          <StylePriority Ref="16" UseFont="false" UseBackColor="false" UsePadding="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="17" ControlType="XRLabel" Name="xrLabel7" CanShrink="true" Text="[Title]" TextAlignment="MiddleJustify" SizeF="401.17,24.42" LocationFloat="108.8333, 36" Font="Tahoma, 9pt, charSet=0" BackColor="255,240,237,218" Padding="9,6,4,4,100">
+          <StylePriority Ref="18" UseFont="false" UseBackColor="false" UsePadding="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="19" ControlType="XRLabel" Name="xrLabel6" CanShrink="true" Text="Address:" TextAlignment="MiddleLeft" SizeF="93.08334,22.5833" LocationFloat="12.00004, 163.9584" Font="Tahoma, 9pt, style=Bold, charSet=0" ForeColor="White" BackColor="255,109,140,89" Padding="11,6,5,4,100">
+          <StylePriority Ref="20" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="21" ControlType="XRLabel" Name="xrLabel4" CanShrink="true" Text="Birth Date:" TextAlignment="MiddleLeft" SizeF="93.08334,24.66672" LocationFloat="12, 64" Font="Tahoma, 9pt, style=Bold, charSet=0" ForeColor="White" BackColor="255,109,140,89" Padding="11,6,5,4,100">
+          <StylePriority Ref="22" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseTextAlignment="false" />
+        </Item8>
+        <Item9 Ref="23" ControlType="XRLabel" Name="xrLabel3" CanShrink="true" Text="Position:" TextAlignment="MiddleLeft" SizeF="93.08342,24.4166" LocationFloat="11.99998, 36" Font="Tahoma, 9pt, style=Bold, charSet=0" ForeColor="White" BackColor="255,109,140,89" Padding="11,6,5,4,100">
+          <StylePriority Ref="24" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseTextAlignment="false" />
+        </Item9>
+        <Item10 Ref="25" ControlType="XRLabel" Name="xrLabel2" CanShrink="true" Text="Name:" TextAlignment="MiddleLeft" SizeF="93.08342,24.66672" LocationFloat="12, 8" Font="Tahoma, 9pt, style=Bold, charSet=0" ForeColor="White" BackColor="255,109,140,89" Padding="11,6,5,4,100">
+          <StylePriority Ref="26" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseTextAlignment="false" />
+        </Item10>
+      </Controls>
+    </Item1>
+    <Item2 Ref="27" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="14.37496" TextAlignment="TopLeft" Padding="0,0,0,0,100" />
+    <Item3 Ref="28" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="15.41667" />
+    <Item4 Ref="29" ControlType="PageHeaderBand" Name="PageHeader" HeightF="40">
+      <Controls>
+        <Item1 Ref="30" ControlType="XRLabel" Name="xrLabel1" CanShrink="true" Text="Employee" TextAlignment="MiddleCenter" SizeF="497.9999,40" LocationFloat="12.00012, 0" Font="Tahoma, 20.25pt" ForeColor="White" BackColor="255,109,140,89" Padding="11,6,5,4,100">
+          <StylePriority Ref="31" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item4>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="32" Name="EvenStyle" BorderStyle="Inset" Font="Tahoma, 8.25pt" ForeColor="Black" BackColor="255,250,250,240" BorderColor="255,196,207,189" Sides="Left, Right, Bottom" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="33" Name="OddStyle" BorderStyle="Inset" Font="Tahoma, 8.25pt" ForeColor="Black" BackColor="255,225,232,220" BorderColor="255,196,207,189" Sides="Left, Right, Bottom" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+  </StyleSheet>
+  <ReportPrintOptions Ref="34" DetailCountAtDesignTime="7" />
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v18.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9Ik5XaW5kQ29ubmVjdGlvblN0cmluZyIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IkVtcGxveWVlcyI+PFRhYmxlcz48VGFibGUgTmFtZT0iRW1wbG95ZWVzIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IkVtcGxveWVlcyIgTmFtZT0iTGFzdE5hbWUiIC8+PENvbHVtbiBUYWJsZT0iRW1wbG95ZWVzIiBOYW1lPSJGaXJzdE5hbWUiIC8+PENvbHVtbiBUYWJsZT0iRW1wbG95ZWVzIiBOYW1lPSJUaXRsZSIgLz48Q29sdW1uIFRhYmxlPSJFbXBsb3llZXMiIE5hbWU9IkJpcnRoRGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJFbXBsb3llZXMiIE5hbWU9IkFkZHJlc3MiIC8+PENvbHVtbiBUYWJsZT0iRW1wbG95ZWVzIiBOYW1lPSJDaXR5IiAvPjxDb2x1bW4gVGFibGU9IkVtcGxveWVlcyIgTmFtZT0iQ291bnRyeSIgLz48Q29sdW1uIFRhYmxlPSJFbXBsb3llZXMiIE5hbWU9Ik5vdGVzIiAvPjwvQ29sdW1ucz48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IkVtcGxveWVlcyI+PEZpZWxkIE5hbWU9Ikxhc3ROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZpcnN0TmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUaXRsZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCaXJ0aERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJBZGRyZXNzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNpdHkiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ291bnRyeSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOb3RlcyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

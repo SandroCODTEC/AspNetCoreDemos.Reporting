@@ -1,0 +1,21 @@
+﻿@model DemoReportModel
+
+<script src="@Url.Content("~/js/report-viewer.js")" asp-append-version="true"></script>
+<script src="@Url.Content("~/js/report-designer.js")" asp-append-version="true"></script>
+<script>
+    function BeforeRender(s, e) {
+        registerNationalityEditor("@Url.Content("~/Content/")");
+        disposeOnUnload(s, e);
+    }
+    function ExitDesigner(s, e) {
+        goToViewer();
+    }
+</script>
+@(Html.DevExpress().ReportDesigner("reportDesigner")
+        .ClientSideEvents(events => {
+            events.BeforeRender("BeforeRender");
+            events.ExitDesigner("ExitDesigner");
+        })
+        .Height("1000px")
+        .Bind(Model.ReportID))
+<input type="hidden" id="redirectValue" value="@Model.RedirectUrl" />

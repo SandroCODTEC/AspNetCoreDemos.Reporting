@@ -1,0 +1,1 @@
+This demo illustrates how to incorporate [bar codes](http://help.devexpress.com/#XtraReports/CustomDocument2613) into your report using the [XRBarCode](http://help.devexpress.com/#XtraReports/clsDevExpressXtraReportsUIXRBarCodetopic) control that ships with the XtraReports suite.

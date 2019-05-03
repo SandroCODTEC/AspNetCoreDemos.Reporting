@@ -1,0 +1,1 @@
+This demo illustrates a drill-down report with collapsible document sections, which can be expanded by clicking an element in Document Preview.

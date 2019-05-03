@@ -1,0 +1,35 @@
+﻿@model string
+
+<script src="~/js/report-viewer.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    function BeforeRender(s, e) {
+        disposeOnUnload(s, e);
+    }
+    function HideExportFormatsExceptPdf(s, e) {
+        ['XLS', 'XLSX', 'Text', 'MHT', 'HTML', 'Image', 'DOCX', 'CSV', 'RTF'].forEach(function(format) { e.HideFormat(DevExpress.Report.Preview.ExportFormatID[format]); });
+    }
+    function CustomizeViewerMenuActions(s, e) {
+        UsePdfExportOnly(s, e);
+        DevExpress.Report.Preview.editablePreviewEnabled(false);
+    }
+    function UsePdfExportOnly(s, e) {
+        var exportAction = e.GetById(DevExpress.Report.Preview.ActionId.ExportTo);
+        if(!exportAction)
+            return;
+        exportAction.imageTemplateName = "dxrd-svg-preview-export-export-to-pdf";
+        exportAction.templateName = undefined;
+        exportAction.clickAction = function(_args) {
+            s.ExportTo('pdf');
+        }
+    }
+</script>
+<div class="wrapper">
+    @(Html.DevExpress().WebDocumentViewer("viewer")
+                                        .ClientSideEvents(events => {
+                                            events.BeforeRender("BeforeRender");
+                                            events.CustomizeExportOptions("HideExportFormatsExceptPdf");
+                                            events.CustomizeMenuActions("CustomizeViewerMenuActions");
+                                        }).Height("1000px").Bind(Model))
+</div>
+
+@await Html.PartialAsync("_ReportDesignerButton", Model)

@@ -1,0 +1,38 @@
+﻿@model string
+
+<script src="~/js/report-viewer.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    function PreviewClick(s, e) {
+        if(e.Brick) {
+            var reprotPreview = s.GetPreviewModel().reportPreview;
+            if(e.Brick.text() === "Show Results") {
+                reprotPreview.drillThrough("showResults");
+            } else if(e.Brick.text() === "Start a new poll") {
+                reprotPreview.drillThrough("startNewPoll");
+            }
+        }
+    }
+    function BeforeRender(s, e) {
+        disposeOnUnload(s, e);
+    }
+    function EditingFieldChanged(s, e) {
+        var reportPreview = s.GetPreviewModel().reportPreview;
+        if(e.Field.groupID()) {
+            reportPreview.editingFieldsProvider().forEach(function(item) {
+                if(item.id() === e.Field.id() && item !== e.Field) {
+                    item.readOnly(e.Field.editValue() !== DevExpress.Report.Preview.CheckState.Checked);
+                }
+            });
+        }
+    }
+</script>
+<div class="wrapper">
+    @(Html.DevExpress().WebDocumentViewer("viewer")
+                                        .ClientSideEvents(events => {
+                                            events.BeforeRender("BeforeRender");
+                                            events.EditingFieldChanged("EditingFieldChanged");
+                                            events.PreviewClick("PreviewClick");
+                                        }).Height("1000px").Bind(Model))
+</div>
+
+@await Html.PartialAsync("_ReportDesignerButton", Model)

@@ -1,0 +1,1 @@
+This demo shows how to use the Sparkline control in your reports. In this demo, the Sparkline control shows a line chart representing monthly payment statistics for each customer.

@@ -1,0 +1,1 @@
+This demo illustrates a multi-column report displaying door signs. In the Parameters panel, you can select the layout of signs and specify whether or not to group them by floors.

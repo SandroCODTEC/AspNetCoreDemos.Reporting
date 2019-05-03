@@ -1,0 +1,21 @@
+﻿@model string
+
+<script src="@Url.Content("~/js/report-viewer.js")"></script>
+<script type="text/javascript">
+    function eformBeforeRender(s, e) {
+        editingFieldsHighlightingEnable(s, e);
+        registerNationalityEditor("@Url.Content("~/Content/")");
+        disposeOnUnload(s, e);
+    }
+    function editingFieldsHighlightingEnable(s, e) {
+        e.reportPreview.editingFieldsHighlighted(true);
+    }
+</script>
+<div class="wrapper">
+    @(Html.DevExpress().WebDocumentViewer("viewer")
+                            .ClientSideEvents(events => {
+                                events.BeforeRender("eformBeforeRender");
+                            }).Height("1000px").Bind(Model))
+</div>
+
+@await Html.PartialAsync("_ReportDesignerButton", Model)

@@ -1,0 +1,1 @@
+This demo illustrates how to use the DevExpress XRBarCode report control to incorporate a Swiss QR Code into a report.

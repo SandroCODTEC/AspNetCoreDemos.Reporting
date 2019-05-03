@@ -1,0 +1,1 @@
+This demo illustrates how to create complex real-life reports with XtraReports. This example represents the **Fall Catalog** report, which simulates the **Northwind Traders** reporting system.

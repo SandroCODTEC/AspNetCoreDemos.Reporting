@@ -1,0 +1,1 @@
+This demo illustrates how to create a master-detail report using the Detail Report bands. The resulting report consists of three levels of information on products and their suppliers, with the product orders grouped by their prices.

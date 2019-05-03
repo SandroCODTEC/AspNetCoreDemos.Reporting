@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="18.2.3.0" Ref="1" ControlType="XtraReportsDemos.SwissQRCode.SwissQRBill, DevExpress.DemoReports.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=4c3bc44151be4b47" Name="SwissQRBillReport" DisplayName="Swiss QR Bill" SnapGridSize="25" ReportUnit="TenthsOfAMillimeter" Margins="0, 0, 0, 1" PaperKind="A4" PageWidth="2100" PageHeight="2970" Version="18.2" DataSource="#Ref-0" Dpi="254" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="2" ControlType="TopMarginBand" Name="TopMargin" HeightF="0" Dpi="254" />
+    <Item2 Ref="3" ControlType="DetailBand" Name="Detail" HeightF="843" Dpi="254">
+      <Controls>
+        <Item1 Ref="4" ControlType="XRPanel" Name="panel3" SizeF="1620.111,843" LocationFloat="247, 0" Dpi="254">
+          <Controls>
+            <Item1 Ref="5" ControlType="XRTable" Name="xrTable2" SizeF="949.8542,240.5" LocationFloat="0, 157" Dpi="254">
+              <Rows>
+                <Item1 Ref="6" ControlType="XRTableRow" Name="xrTableRow5" Weight="1" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="7" ControlType="XRTableCell" Name="xrTableCell9" Weight="0.41895880538868469" Multiline="true" Text="Phone:" Dpi="254" StyleName="Bill_Caption_text" Font="Arial, 9.75pt, style=Bold" Padding="5,5,0,0,254">
+                      <StylePriority Ref="8" UsePadding="false" />
+                    </Item1>
+                    <Item2 Ref="9" ControlType="XRTableCell" Name="xrTableCell10" Weight="1.5810411946113154" Multiline="true" Text="xrTableCell10" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254">
+                      <ExpressionBindings>
+                        <Item1 Ref="10" Expression="[Creditor].[Phone]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="11" UsePadding="false" />
+                    </Item2>
+                  </Cells>
+                </Item1>
+                <Item2 Ref="12" ControlType="XRTableRow" Name="xrTableRow3" Weight="1" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="13" ControlType="XRTableCell" Name="xrTableCell5" Weight="0.41895874113128911" Multiline="true" Text="Email:" Dpi="254" StyleName="Bill_Caption_text" Font="Arial, 9.75pt, style=Bold" Padding="5,5,0,0,254">
+                      <StylePriority Ref="14" UsePadding="false" />
+                    </Item1>
+                    <Item2 Ref="15" ControlType="XRTableCell" Name="xrTableCell6" Weight="1.5810412588687111" Multiline="true" Text="xrTableCell6" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254">
+                      <ExpressionBindings>
+                        <Item1 Ref="16" Expression="[Creditor].[Email]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="17" UsePadding="false" />
+                    </Item2>
+                  </Cells>
+                </Item2>
+                <Item3 Ref="18" ControlType="XRTableRow" Name="xrTableRow6" Weight="0.99999999999999989" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="19" ControlType="XRTableCell" Name="xrTableCell11" Weight="0.41895880538868469" Multiline="true" Text="Internet:" Dpi="254" StyleName="Bill_Caption_text" Font="Arial, 9.75pt, style=Bold" Padding="5,5,0,0,254">
+                      <StylePriority Ref="20" UsePadding="false" />
+                    </Item1>
+                    <Item2 Ref="21" ControlType="XRTableCell" Name="xrTableCell12" Weight="1.5810411946113154" Multiline="true" Text="xrTableCell12" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254">
+                      <ExpressionBindings>
+                        <Item1 Ref="22" Expression="[Creditor].[Website]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="23" UsePadding="false" />
+                    </Item2>
+                  </Cells>
+                </Item3>
+                <Item4 Ref="24" ControlType="XRTableRow" Name="xrTableRow7" Weight="0.78740157480314954" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="25" ControlType="XRTableCell" Name="xrTableCell13" Weight="0.41895880538868469" Multiline="true" Text="Date:" Dpi="254" StyleName="Bill_Caption_text" Font="Arial, 9.75pt, style=Bold" Padding="5,5,0,0,254">
+                      <StylePriority Ref="26" UsePadding="false" />
+                    </Item1>
+                    <Item2 Ref="27" ControlType="XRTableCell" Name="xrTableCell14" Weight="1.5810411946113154" TextFormatString="{0:d/M/yyyy}" Multiline="true" Text="[BillDate!d/M/yyyy]" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254">
+                      <StylePriority Ref="28" UsePadding="false" />
+                    </Item2>
+                  </Cells>
+                </Item4>
+              </Rows>
+            </Item1>
+            <Item2 Ref="29" ControlType="XRTable" Name="xrTable9" SizeF="758.8168,127" LocationFloat="200, 0" Dpi="254">
+              <Rows>
+                <Item1 Ref="30" ControlType="XRTableRow" Name="xrTableRow30" Weight="1" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="31" ControlType="XRTableCell" Name="xrTableCell42" Weight="1" Multiline="true" Text="xrTableCell20" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254">
+                      <ExpressionBindings>
+                        <Item1 Ref="32" Expression="[Creditor].[FullName]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="33" UsePadding="false" />
+                    </Item1>
+                  </Cells>
+                </Item1>
+                <Item2 Ref="34" ControlType="XRTableRow" Name="xrTableRow31" Weight="1" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="35" ControlType="XRTableCell" Name="xrTableCell43" Weight="1" Multiline="true" Text="xrTableCell19" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254">
+                      <ExpressionBindings>
+                        <Item1 Ref="36" Expression="[Creditor].[Address]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                    </Item1>
+                  </Cells>
+                </Item2>
+              </Rows>
+            </Item2>
+            <Item3 Ref="37" ControlType="XRPictureBox" Name="xrPictureBox1" ImageSource="img,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAB4SURBVFhH7c6xCcAwDAXRTOIFvP8omSdpXAiJgI9giMOJVwr+HWdvH2QWYRZhFmEW8Tbrerj0RplFmEWYRZhFmEVsmDUWll2ai8wql+Yis8qluciscmku2jBrxlgol94oswizCLMIswiziJ9mLWIWYRZhFmHWvN5uZaYwC96uN8kAAAAASUVORK5CYII=" SizeF="131.3295,133.706" LocationFloat="4, 4" Dpi="254" BorderColor="Black" Borders="None">
+              <StylePriority Ref="38" UseBorderColor="false" UseBorders="false" />
+            </Item3>
+            <Item4 Ref="39" ControlType="XRTable" Name="xrTable4" SizeF="508,79.375" LocationFloat="0, 680" Dpi="254">
+              <Rows>
+                <Item1 Ref="40" ControlType="XRTableRow" Name="xrTableRow12" Weight="1" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="41" ControlType="XRTableCell" Name="xrTableCell4" Weight="0.67903300357128182" Multiline="true" Text="Bill no." TextAlignment="MiddleLeft" Dpi="254" StyleName="Bill_Common_text" Font="Arial, 13pt, style=Bold" Padding="5,5,0,0,254">
+                      <StylePriority Ref="42" UseFont="false" UseTextAlignment="false" />
+                    </Item1>
+                    <Item2 Ref="43" ControlType="XRTableCell" Name="xrTableCell8" Weight="1.3209669964287181" Multiline="true" TextAlignment="MiddleLeft" Dpi="254" StyleName="Bill_Common_text" Font="Arial, 13pt, style=Bold" Padding="5,5,0,0,254">
+                      <ExpressionBindings>
+                        <Item1 Ref="44" Expression="[BillNumber]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="45" UseFont="false" UseTextAlignment="false" />
+                    </Item2>
+                  </Cells>
+                </Item1>
+              </Rows>
+              <StylePriority Ref="46" UseFont="false" />
+            </Item4>
+            <Item5 Ref="47" ControlType="XRTable" Name="xrTable3" SizeF="521.111,127" LocationFloat="1099, 0" Dpi="254">
+              <Rows>
+                <Item1 Ref="48" ControlType="XRTableRow" Name="xrTableRow11" Weight="1" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="49" ControlType="XRTableCell" Name="xrTableCell20" Weight="1" Multiline="true" Text="xrTableCell20" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254">
+                      <ExpressionBindings>
+                        <Item1 Ref="50" Expression="[Debtor].[FullName]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="51" UsePadding="false" />
+                    </Item1>
+                  </Cells>
+                </Item1>
+                <Item2 Ref="52" ControlType="XRTableRow" Name="xrTableRow10" Weight="1" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="53" ControlType="XRTableCell" Name="xrTableCell19" Weight="1" Multiline="true" Text="xrTableCell19" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254">
+                      <ExpressionBindings>
+                        <Item1 Ref="54" Expression="[Debtor].[Address]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                    </Item1>
+                  </Cells>
+                </Item2>
+              </Rows>
+            </Item5>
+            <Item6 Ref="55" ControlType="XRLabel" Name="xrLabel2" Multiline="true" Text="Dear Ms. Rutschmann,&#xD;&#xA;Here is your invoice." SizeF="1620.111,91.0116" LocationFloat="3.051758E-05, 549.9999" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254" />
+            <Item7 Ref="56" ControlType="XRTable" Name="table2" SizeF="1594.944,55" LocationFloat="4, 785" Dpi="254" Font="Arial, 9.75pt, style=Bold" BorderColor="255,52,52,52" Borders="Bottom" BorderWidth="2">
+              <Rows>
+                <Item1 Ref="57" ControlType="XRTableRow" Name="tableRow2" Weight="0.48208887438992409" Dpi="254" BorderColor="255,122,126,135">
+                  <Cells>
+                    <Item1 Ref="58" ControlType="XRTableCell" Name="xrTableCell3" Weight="0.013492589501597442" Multiline="true" Dpi="254" StyleName="Bill_Caption_text" Padding="5,5,0,0,254">
+                      <StylePriority Ref="59" UsePadding="false" />
+                    </Item1>
+                    <Item2 Ref="60" ControlType="XRTableCell" Name="tableCell6" Weight="0.10957741447328723" Multiline="true" Text="Item" Dpi="254" StyleName="Bill_Caption_text" Padding="5,5,0,0,254">
+                      <StylePriority Ref="61" UsePadding="false" />
+                    </Item2>
+                    <Item3 Ref="62" ControlType="XRTableCell" Name="tableCell7" Weight="0.38006628284923649" Multiline="true" Text="Description" Dpi="254" StyleName="Bill_Caption_text" Padding="5,5,0,0,254" />
+                    <Item4 Ref="63" ControlType="XRTableCell" Name="tableCell8" Weight="0.13087735548097323" Multiline="true" Text="Hours" TextAlignment="TopRight" Dpi="254" StyleName="Bill_Caption_text" Padding="5,5,0,0,254">
+                      <StylePriority Ref="64" UseTextAlignment="false" />
+                    </Item4>
+                    <Item5 Ref="65" ControlType="XRTableCell" Name="tableCell9" Weight="0.35736028131103592" Multiline="true" Text="Rate per hour / CHF" TextAlignment="TopRight" Dpi="254" StyleName="Bill_Caption_text" Padding="5,5,0,0,254" />
+                    <Item6 Ref="66" ControlType="XRTableCell" Name="tableCell10" Weight="0.19831058265581425" Multiline="true" Text="Total / CHF" TextAlignment="TopRight" Dpi="254" StyleName="Bill_Caption_text" Padding="5,5,0,0,254" />
+                    <Item7 Ref="67" ControlType="XRTableCell" Name="xrTableCell7" Weight="0.010715141189104577" Multiline="true" TextAlignment="TopRight" Dpi="254" StyleName="Bill_Caption_text" Padding="5,5,0,0,254">
+                      <StylePriority Ref="68" UsePadding="false" UseTextAlignment="false" />
+                    </Item7>
+                  </Cells>
+                  <StylePriority Ref="69" UseBorderColor="false" />
+                </Item1>
+              </Rows>
+              <StylePriority Ref="70" UseFont="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" />
+            </Item7>
+          </Controls>
+        </Item1>
+      </Controls>
+    </Item2>
+    <Item3 Ref="71" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="1" Dpi="254" />
+    <Item4 Ref="72" ControlType="ReportFooterBand" Name="ReportFooter1" PrintAtBottom="true" HeightF="1050" Dpi="254">
+      <Controls>
+        <Item1 Ref="73" ControlType="XRPanel" Name="QRReceipt" CanGrow="false" SizeF="619.9999,1050" LocationFloat="0, 0" Dpi="254" Borders="Left, Top, Bottom">
+          <Controls>
+            <Item1 Ref="74" ControlType="XRLabel" Name="xrLabel5" Multiline="true" Text="Acceptance point" TextAlignment="BottomRight" SizeF="220,29.02" LocationFloat="350, 891.4" Dpi="254" StyleName="QRReceipt_Caption" Padding="5,5,0,0,254" Borders="None">
+              <StylePriority Ref="75" UseBorders="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="76" ControlType="XRPanel" Name="xrPanel2" CanGrow="false" SizeF="520.0115,570.5948" LocationFloat="49.99999, 132.4666" Dpi="254" Borders="None">
+              <Controls>
+                <Item1 Ref="77" ControlType="XRTable" Name="xrTable7" SizeF="515.8609,355" LocationFloat="0, 0" Dpi="254" Borders="None">
+                  <Rows>
+                    <Item1 Ref="78" ControlType="XRTableRow" Name="xrTableRow8" Weight="0.057704634732197987" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="79" ControlType="XRTableCell" Name="xrTableCell17" Weight="1" Multiline="true" Text="Account / Payable to" Dpi="254" StyleName="QRReceipt_Caption" Padding="5,5,0,0,254">
+                          <StylePriority Ref="80" UseFont="false" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item1>
+                    <Item2 Ref="81" ControlType="XRTableRow" Name="xrTableRow9" Weight="0.070527886894908659" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="82" ControlType="XRTableCell" Name="xrTableCell21" Weight="1" Multiline="true" Text="xrTableCell16" Dpi="254" StyleName="QRReceipt_Text" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="83" Expression="[QRBillData].[Account]" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                        </Item1>
+                      </Cells>
+                    </Item2>
+                    <Item3 Ref="84" ControlType="XRTableRow" Name="xrTableRow14" Weight="0.070527886894908645" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="85" ControlType="XRTableCell" Name="xrTableCell29" Weight="1" Multiline="true" Text="xrTableCell26" Dpi="254" StyleName="QRReceipt_Text" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="86" Expression="[QRBillData].[Creditor]" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                          <StylePriority Ref="87" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item3>
+                    <Item4 Ref="88" ControlType="XRTableRow" Name="xrTableRow15" Weight="0.057704634732198" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="89" ControlType="XRTableCell" Name="xrTableCell35" Weight="1" Multiline="true" Text="Reference" Dpi="254" StyleName="QRReceipt_Caption" Padding="5,5,0,0,254">
+                          <StylePriority Ref="90" UseFont="false" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item4>
+                    <Item5 Ref="91" ControlType="XRTableRow" Name="xrTableRow23" Weight="0.070527886894908631" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="92" ControlType="XRTableCell" Name="xrTableCell37" Weight="1" Multiline="true" Text="xrTableCell27" Dpi="254" StyleName="QRReceipt_Text" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="93" Expression="[QRBillData].[ReferenceNumber]" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                          <StylePriority Ref="94" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item5>
+                    <Item6 Ref="95" ControlType="XRTableRow" Name="xrTableRow32" Weight="0.057704634732198029" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="96" ControlType="XRTableCell" Name="xrTableCell51" Weight="1" Multiline="true" Text="Payable by" Dpi="254" StyleName="QRReceipt_Caption" Padding="5,5,0,0,254">
+                          <StylePriority Ref="97" UseFont="false" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item6>
+                    <Item7 Ref="98" ControlType="XRTableRow" Name="xrTableRow33" Weight="0.070527886894908659" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="99" ControlType="XRTableCell" Name="xrTableCell52" Weight="1" Multiline="true" Text="xrTableCell23" Dpi="254" StyleName="QRReceipt_Text" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="100" Expression="[QRBillData].[Debtor]" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                          <StylePriority Ref="101" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item7>
+                  </Rows>
+                  <StylePriority Ref="102" UseBorders="false" />
+                </Item1>
+              </Controls>
+              <StylePriority Ref="103" UseBorders="false" />
+            </Item2>
+            <Item3 Ref="104" ControlType="XRTable" Name="xrTable10" SizeF="427.6665,70" LocationFloat="50, 753.87" Dpi="254">
+              <Rows>
+                <Item1 Ref="105" ControlType="XRTableRow" Name="xrTableRow2" Weight="0.47244094488188981" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="106" ControlType="XRTableCell" Name="xrTableCell45" Weight="0.80208317313607291" Multiline="true" Text="Currency" Dpi="254" StyleName="QRReceipt_Caption" Padding="5,5,0,0,254" Borders="None">
+                      <StylePriority Ref="107" UsePadding="false" UseBorders="false" />
+                    </Item1>
+                    <Item2 Ref="108" ControlType="XRTableCell" Name="xrTableCell46" Weight="1.0483100470595475" Multiline="true" Text="Amount" Dpi="254" StyleName="QRReceipt_Caption" Padding="5,5,0,0,254" Borders="None">
+                      <StylePriority Ref="109" UsePadding="false" UseBorders="false" />
+                    </Item2>
+                  </Cells>
+                </Item1>
+                <Item2 Ref="110" ControlType="XRTableRow" Name="xrTableRow4" Weight="0.62992125984251968" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="111" ControlType="XRTableCell" Name="xrTableCell47" Weight="0.80208317313607291" Multiline="true" Text="xrTableCell31" Dpi="254" StyleName="QRReceipt_Text" Padding="5,5,0,0,254" Borders="None">
+                      <ExpressionBindings>
+                        <Item1 Ref="112" Expression="[QRBillData].[Currency]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="113" UseBorders="false" />
+                    </Item1>
+                    <Item2 Ref="114" ControlType="XRTableCell" Name="xrTableCell48" Weight="1.0483100470595475" TextFormatString="{0:# ###.00}" Multiline="true" Text="xrTableCell32" Dpi="254" StyleName="QRReceipt_Text" Padding="5,5,0,0,254" Borders="None">
+                      <ExpressionBindings>
+                        <Item1 Ref="115" Expression="[QRBillData].[Amount]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="116" UseBorders="false" />
+                    </Item2>
+                  </Cells>
+                </Item2>
+              </Rows>
+            </Item3>
+            <Item4 Ref="117" ControlType="XRLabel" Name="xrLabel4" Multiline="true" AutoWidth="true" Text="Receipt" TextAlignment="MiddleLeft" SizeF="417.3102,62.46656" LocationFloat="50, 52.35" Dpi="254" Font="Arial, 11pt, style=Bold" Padding="5,5,0,0,254" Borders="None">
+              <StylePriority Ref="118" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+            </Item4>
+          </Controls>
+          <StylePriority Ref="119" UseBorders="false" />
+        </Item1>
+        <Item2 Ref="120" ControlType="XRPanel" Name="QRbill" CanGrow="false" SizeF="1480,1050" LocationFloat="620, 0" Dpi="254" Borders="All">
+          <Controls>
+            <Item1 Ref="121" ControlType="XRTable" Name="xrTable6" SizeF="427.6665,70" LocationFloat="56.08923, 753.8671" Dpi="254">
+              <Rows>
+                <Item1 Ref="122" ControlType="XRTableRow" Name="xrTableRow26" Weight="0.47244094488188981" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="123" ControlType="XRTableCell" Name="xrTableCell33" Weight="0.80208317313607291" Multiline="true" Text="Currency" Dpi="254" StyleName="QRBill_Caption" Padding="5,5,0,0,254" Borders="None">
+                      <StylePriority Ref="124" UsePadding="false" UseBorders="false" />
+                    </Item1>
+                    <Item2 Ref="125" ControlType="XRTableCell" Name="xrTableCell34" Weight="1.0483100470595475" Multiline="true" Text="Amount" Dpi="254" StyleName="QRBill_Caption" Padding="5,5,0,0,254" Borders="None">
+                      <StylePriority Ref="126" UsePadding="false" UseBorders="false" />
+                    </Item2>
+                  </Cells>
+                </Item1>
+                <Item2 Ref="127" ControlType="XRTableRow" Name="xrTableRow25" Weight="0.62992125984251968" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="128" ControlType="XRTableCell" Name="xrTableCell31" Weight="0.80208317313607291" Multiline="true" Text="xrTableCell31" Dpi="254" StyleName="QRBill_Text" Padding="5,5,0,0,254" Borders="None">
+                      <ExpressionBindings>
+                        <Item1 Ref="129" Expression="[QRBillData].[Currency]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="130" UseBorders="false" />
+                    </Item1>
+                    <Item2 Ref="131" ControlType="XRTableCell" Name="xrTableCell32" Weight="1.0483100470595475" TextFormatString="{0:# ###.00}" Multiline="true" Text="xrTableCell32" Dpi="254" StyleName="QRBill_Text" Padding="5,5,0,0,254" Borders="None">
+                      <ExpressionBindings>
+                        <Item1 Ref="132" Expression="[QRBillData].[Amount]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="133" UseBorders="false" />
+                    </Item2>
+                  </Cells>
+                </Item2>
+              </Rows>
+            </Item1>
+            <Item2 Ref="134" ControlType="XRPanel" Name="panel4" CanGrow="false" SizeF="750.2446,883.4344" LocationFloat="650.1195, 75.6958" Dpi="254" Borders="None">
+              <Controls>
+                <Item1 Ref="135" ControlType="XRTable" Name="xrTable5" SizeF="717.1587,455" LocationFloat="10.58337, 11.77077" Dpi="254">
+                  <Rows>
+                    <Item1 Ref="136" ControlType="XRTableRow" Name="xrTableRow19" Weight="0.057704634732197987" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="137" ControlType="XRTableCell" Name="xrTableCell25" Weight="1" Multiline="true" Text="Account / Payable to" Dpi="254" StyleName="QRBill_Caption" Padding="5,5,0,0,254">
+                          <StylePriority Ref="138" UseFont="false" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item1>
+                    <Item2 Ref="139" ControlType="XRTableRow" Name="xrTableRow13" Weight="0.070527886894908659" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="140" ControlType="XRTableCell" Name="xrTableCell16" Weight="1" Multiline="true" Text="xrTableCell16" Dpi="254" StyleName="QRBill_Text" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="141" Expression="[QRBillData].[Account]" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                        </Item1>
+                      </Cells>
+                    </Item2>
+                    <Item3 Ref="142" ControlType="XRTableRow" Name="xrTableRow20" Weight="0.070527886894908645" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="143" ControlType="XRTableCell" Name="xrTableCell26" Weight="1" Multiline="true" Text="xrTableCell26" Dpi="254" StyleName="QRBill_Text" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="144" Expression="[QRBillData].[Creditor]" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                          <StylePriority Ref="145" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item3>
+                    <Item4 Ref="146" ControlType="XRTableRow" Name="xrTableRow24" Weight="0.057704634732198" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="147" ControlType="XRTableCell" Name="xrTableCell30" Weight="1" Multiline="true" Text="Reference" Dpi="254" StyleName="QRBill_Caption" Padding="5,5,0,0,254">
+                          <StylePriority Ref="148" UseFont="false" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item4>
+                    <Item5 Ref="149" ControlType="XRTableRow" Name="xrTableRow21" Weight="0.070527886894908631" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="150" ControlType="XRTableCell" Name="xrTableCell27" Weight="1" Multiline="true" Text="xrTableCell27" Dpi="254" StyleName="QRBill_Text" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="151" Expression="[QRBillData].[ReferenceNumber]" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                          <StylePriority Ref="152" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item5>
+                    <Item6 Ref="153" ControlType="XRTableRow" Name="xrTableRow22" Weight="0.057704634732197974" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="154" ControlType="XRTableCell" Name="xrTableCell28" Weight="1" Multiline="true" Text="Additional Information" Dpi="254" StyleName="QRBill_Caption" Padding="5,5,0,0,254">
+                          <StylePriority Ref="155" UseFont="false" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item6>
+                    <Item7 Ref="156" ControlType="XRTableRow" Name="xrTableRow18" Weight="0.070527886894908659" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="157" ControlType="XRTableCell" Name="xrTableCell24" Weight="1" Multiline="true" Text="xrTableCell24" Dpi="254" StyleName="QRBill_Text" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="158" Expression="[QRBillData].[AdditionalInformation]" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                          <StylePriority Ref="159" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item7>
+                    <Item8 Ref="160" ControlType="XRTableRow" Name="xrTableRow16" Weight="0.057704634732198029" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="161" ControlType="XRTableCell" Name="xrTableCell22" Weight="1" Multiline="true" Text="Payable by" Dpi="254" StyleName="QRBill_Caption" Padding="5,5,0,0,254">
+                          <StylePriority Ref="162" UseFont="false" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item8>
+                    <Item9 Ref="163" ControlType="XRTableRow" Name="xrTableRow17" Weight="0.070527886894908659" Dpi="254">
+                      <Cells>
+                        <Item1 Ref="164" ControlType="XRTableCell" Name="xrTableCell23" Weight="1" Multiline="true" Text="xrTableCell23" Dpi="254" StyleName="QRBill_Text" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="165" Expression="[QRBillData].[Debtor]" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                          <StylePriority Ref="166" UsePadding="false" />
+                        </Item1>
+                      </Cells>
+                    </Item9>
+                  </Rows>
+                </Item1>
+              </Controls>
+              <StylePriority Ref="167" UseBorders="false" />
+            </Item2>
+            <Item3 Ref="168" ControlType="XRLabel" Name="label45" Multiline="true" AutoWidth="true" Text="Payment part" TextAlignment="MiddleLeft" SizeF="417.3102,62.46656" LocationFloat="56.08948, 52.3542" Dpi="254" Font="Arial, 11pt, style=Bold" Padding="5,5,0,0,254" Borders="None">
+              <StylePriority Ref="169" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+            </Item3>
+            <Item4 Ref="170" ControlType="XRBarCode" Name="barCode2" Module="4.07" ShowText="false" SizeF="470,470" LocationFloat="88.33337, 187.4666" Dpi="254" Borders="None">
+              <Symbology Ref="171" Name="QRCode" CompactionMode="Byte" ErrorCorrectionLevel="M" Version="Version24" Logo="img,iVBORw0KGgoAAAANSUhEUgAAAKYAAACmAQMAAABqRmY0AAAAIGNIUk0AAIcKAACMDQABBbcAAIDoAABSBQABFVsAADavAAAfQQLQ3GkAAAAGUExURQAAAP///6XZn90AAAAJcEhZcwAAXEYAAFxGARSUQ0EAAACVSURBVEjH7ZRRDoAgDEO5AUfy6hzJA2yrfinBxaSZ40f2+dK0sAYKvHGputTCWiYNBBUubS/jbCCohrWS5Bun8T0YQbP2e6fVs/H2cOgpo/WphNOUoBLWIikN4bT4LZDUvCQ1by++tfu12uU7Ul+rhAOjNeIMSKJKUCMopvoybVpSm5r0YrHoolNpN4su+j315m8UOADkK/VHIvAcUQAAAABJRU5ErkJggg==" />
+              <ExpressionBindings>
+                <Item1 Ref="172" PropertyName="Text" EventName="BeforePrint" />
+                <Item2 Ref="173" Expression="[QRBillData].[QRCodeData]" PropertyName="Text" EventName="BeforePrint" />
+              </ExpressionBindings>
+              <StylePriority Ref="174" UsePadding="false" UseBorders="false" />
+            </Item4>
+          </Controls>
+          <StylePriority Ref="175" UseBorders="false" />
+        </Item2>
+      </Controls>
+    </Item4>
+    <Item5 Ref="176" ControlType="DetailReportBand" Name="DetailReport" Level="0" DataMember="BillItems" DataSource="#Ref-0" Dpi="254">
+      <Bands>
+        <Item1 Ref="177" ControlType="DetailBand" Name="Detail1" HeightF="69" Dpi="254">
+          <Controls>
+            <Item1 Ref="178" ControlType="XRTable" Name="xrTable8" SizeF="1594.944,69" LocationFloat="251, 0" Dpi="254" OddStyleName="Bill_Table_Odd_Row">
+              <Rows>
+                <Item1 Ref="179" ControlType="XRTableRow" Name="xrTableRow29" Weight="0.64460233140750589" Dpi="254">
+                  <Cells>
+                    <Item1 Ref="180" ControlType="XRTableCell" Name="xrTableCell15" Weight="0.014410900263914381" Multiline="true" TextAlignment="MiddleLeft" Dpi="254" Padding="5,5,0,0,254">
+                      <StylePriority Ref="181" UsePadding="false" UseTextAlignment="false" />
+                    </Item1>
+                    <Item2 Ref="182" ControlType="XRTableCell" Name="xrTableCell41" Weight="0.098153071793592353" Multiline="true" TextAlignment="MiddleLeft" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254">
+                      <Summary Ref="183" Running="Report" />
+                      <ExpressionBindings>
+                        <Item1 Ref="184" Expression="sumRecordNumber([BillItems].[Description])" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="185" UsePadding="false" UseTextAlignment="false" />
+                    </Item2>
+                    <Item3 Ref="186" ControlType="XRTableCell" Name="xrTableCell36" Weight="0.34762144244995119" Multiline="true" Text="xrTableCell36" TextAlignment="MiddleLeft" Dpi="254" StyleName="Bill_Common_text" Padding="2,2,0,0,96">
+                      <ExpressionBindings>
+                        <Item1 Ref="187" Expression="[BillItems].[Description]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="188" UseTextAlignment="false" />
+                    </Item3>
+                    <Item4 Ref="189" ControlType="XRTableCell" Name="xrTableCell38" Weight="0.11970476113132902" Multiline="true" Text="xrTableCell38" TextAlignment="MiddleRight" Dpi="254" StyleName="Bill_Common_text" Padding="2,2,0,0,96">
+                      <ExpressionBindings>
+                        <Item1 Ref="190" Expression="[BillItems].[Amount]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="191" UseTextAlignment="false" />
+                    </Item4>
+                    <Item5 Ref="192" ControlType="XRTableCell" Name="xrTableCell39" Weight="0.32685383084975694" TextFormatString="{0:#.00}" Multiline="true" Text="xrTableCell39" TextAlignment="MiddleRight" Dpi="254" StyleName="Bill_Common_text" Padding="2,2,0,0,96">
+                      <ExpressionBindings>
+                        <Item1 Ref="193" Expression="[BillItems].[PricePerUnit]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="194" UseTextAlignment="false" />
+                    </Item5>
+                    <Item6 Ref="195" ControlType="XRTableCell" Name="xrTableCell40" Weight="0.18162107685750176" TextFormatString="{0:# ###.00}" Multiline="true" Text="xrTableCell40" TextAlignment="MiddleRight" Dpi="254" StyleName="Bill_Common_text" Padding="2,2,0,0,96">
+                      <ExpressionBindings>
+                        <Item1 Ref="196" Expression="[BillItems].[TotalPrice]" PropertyName="Text" EventName="BeforePrint" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="197" UseTextAlignment="false" />
+                    </Item6>
+                    <Item7 Ref="198" ControlType="XRTableCell" Name="xrTableCell18" Weight="0.0095608846128444058" Multiline="true" TextAlignment="MiddleRight" Dpi="254" Padding="5,5,0,0,254">
+                      <StylePriority Ref="199" UsePadding="false" UseTextAlignment="false" />
+                    </Item7>
+                  </Cells>
+                </Item1>
+              </Rows>
+            </Item1>
+          </Controls>
+        </Item1>
+      </Bands>
+    </Item5>
+    <Item6 Ref="200" ControlType="DetailReportBand" Name="DetailReport1" Level="1" DataSource="#Ref-0" Dpi="254">
+      <Bands>
+        <Item1 Ref="201" ControlType="DetailBand" Name="Detail2" HeightF="361.8483" Dpi="254">
+          <Controls>
+            <Item1 Ref="202" ControlType="XRPanel" Name="panel1" SizeF="1620.111,361.8483" LocationFloat="247, 0" Dpi="254">
+              <Controls>
+                <Item1 Ref="203" ControlType="XRLabel" Name="xrLabel3" Multiline="true" Text="Yours sincerely,&#xD;&#xA;Henri Schmid" SizeF="386.2916,92.81583" LocationFloat="0, 195" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254" />
+                <Item2 Ref="204" ControlType="XRTable" Name="xrTable1" SizeF="1594.944,63.5" LocationFloat="4, 5" Dpi="254">
+                  <Rows>
+                    <Item1 Ref="205" ControlType="XRTableRow" Name="xrTableRow1" Weight="1" Dpi="254" BorderColor="255,122,126,135" Borders="Top" BorderWidth="2">
+                      <Cells>
+                        <Item1 Ref="206" ControlType="XRTableCell" Name="xrTableCell1" Weight="5.1858913097621775" Multiline="true" Text="Bill amount [including VAT]" TextAlignment="MiddleRight" Dpi="254" StyleName="Bill_Caption_text" Font="Arial, 9.75pt, style=Bold" Padding="5,5,0,0,254">
+                          <StylePriority Ref="207" UseFont="false" UseTextAlignment="false" />
+                        </Item1>
+                        <Item2 Ref="208" ControlType="XRTableCell" Name="xrTableCell2" Weight="1.0387352098795109" TextFormatString="{0:# ###.00}" Multiline="true" TextAlignment="MiddleRight" Dpi="254" StyleName="Bill_Common_text" Font="Arial, 9.75pt, style=Bold" Padding="5,5,0,0,254">
+                          <ExpressionBindings>
+                            <Item1 Ref="209" Expression="[BillItems].Sum([TotalPrice])" PropertyName="Text" EventName="BeforePrint" />
+                          </ExpressionBindings>
+                          <StylePriority Ref="210" UseFont="false" UseTextAlignment="false" />
+                        </Item2>
+                        <Item3 Ref="211" ControlType="XRTableCell" Name="xrTableCell44" Weight="0.054680721675451571" Multiline="true" TextAlignment="MiddleRight" Dpi="254" Font="Arial, 9.75pt, style=Bold" Padding="5,5,0,0,254">
+                          <StylePriority Ref="212" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                        </Item3>
+                      </Cells>
+                      <StylePriority Ref="213" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" />
+                    </Item1>
+                  </Rows>
+                </Item2>
+                <Item3 Ref="214" ControlType="XRLabel" Name="label5" Multiline="true" Text="This invoice should be paid within 30 days." SizeF="771.3105,57.4782" LocationFloat="0, 130" Dpi="254" StyleName="Bill_Common_text" Padding="5,5,0,0,254" />
+              </Controls>
+            </Item1>
+          </Controls>
+        </Item1>
+      </Bands>
+    </Item6>
+    <Item7 Ref="215" ControlType="PageHeaderBand" Name="PageHeader" HeightF="250" Dpi="254">
+      <Controls>
+        <Item1 Ref="216" ControlType="XRLabel" Name="xrLabel1" Multiline="true" Text="This report demonstrates the QR-bill payment part created according to Swiss implementation guidelines v2.0" TextAlignment="MiddleCenter" NavigateUrl="http://docs.devexpress.com/XtraReports/400351/create-popular-reports/create-a-swiss-qr-bill" SizeF="1569.46,115" LocationFloat="251, 75" Dpi="254" Font="Arial, 9.75pt, style=Bold, Underline" ForeColor="255,0,102,204" Padding="5,5,0,0,254" Borders="None">
+          <StylePriority Ref="217" UseFont="false" UseForeColor="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item7>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="218" Name="QRBill_Caption" BorderStyle="Inset" Font="Arial, 7.75pt, style=Bold" StringFormat="Near;Far;0;None;Character;Default" TextAlignment="BottomLeft" />
+    <Item2 Ref="219" Name="QRBill_Text" BorderStyle="Inset" Font="Arial, 9.5pt" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+    <Item3 Ref="220" Name="Bill_Caption_text" BorderStyle="Inset" Font="Arial, 9.75pt, style=Bold" ForeColor="255,157,161,168" StringFormat="Near;Near;0;None;Character;Default" />
+    <Item4 Ref="221" Name="Bill_Table_Odd_Row" BorderStyle="Inset" BackColor="255,247,248,250" StringFormat="Near;Near;0;None;Character;Default" />
+    <Item5 Ref="222" Name="Bill_Common_text" BorderStyle="Inset" ForeColor="255,52,52,52" StringFormat="Near;Near;0;None;Character;Default" />
+    <Item6 Ref="223" Name="QRReceipt_Caption" BorderStyle="Inset" Font="Arial, 6.75pt, style=Bold" StringFormat="Near;Far;0;None;Character;Default" TextAlignment="BottomLeft" />
+    <Item7 Ref="224" Name="QRReceipt_Text" BorderStyle="Inset" Font="Arial, 8.5pt" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v18.2" Name="objectDataSource1" Base64="PE9iamVjdERhdGFTb3VyY2UgTmFtZT0ib2JqZWN0RGF0YVNvdXJjZTEiPjxEYXRhU291cmNlIFR5cGU9IkFzcE5ldENvcmVEZW1vcy5SZXBvcnRpbmcuRGF0YVNvdXJjZXMuU3dpc3NRUkJpbGwuQmlsbERTLCBBc3BOZXRDb3JlRGVtb3MuUmVwb3J0aW5nIiAvPjxEYXRhTWVtYmVyPkRhdGFTb3VyY2U8L0RhdGFNZW1iZXI+PC9PYmplY3REYXRhU291cmNlPg==" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

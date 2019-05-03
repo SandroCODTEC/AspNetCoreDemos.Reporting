@@ -1,0 +1,1 @@
+This demo illustrates how to create a master-detail report by placing the Subreport control onto the Detail band. A different approach to master-detail report generation is shown in the Master-Detail Report demo.

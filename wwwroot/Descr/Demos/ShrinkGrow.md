@@ -1,0 +1,1 @@
+This demo illustrates how to create a report with a layout consisting of controls with the non-fixed height. This report represents a list of employees from the **Northwind** database and uses the **Shrink and Grow** feature.

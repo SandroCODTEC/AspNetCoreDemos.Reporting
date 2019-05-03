@@ -1,0 +1,1 @@
+This demo illustrates a sample tabular report created using the XRTable control. The XRTableCell.TextFitMode property is used so that the Supplier column's text size is adjusted to occupy the entire available cell space.

@@ -1,0 +1,1 @@
+DevExpress Reporting allows you to specify how to process hidden cells in reports using the XRTable.ProcessHiddenCellMode property. In this demo, change the report parameter's value to see one of the available modes in action.

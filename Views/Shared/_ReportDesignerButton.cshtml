@@ -1,0 +1,14 @@
+﻿@* Model is reportID *@
+@model string
+@functions {
+    object ToScript(object value) {
+        return Html.Raw(Json.Serialize(value));
+    }
+}
+
+<script>
+    addReportDesignerButton(
+        @ToScript(Model),
+        @ToScript(DemoUtils.KeepQueryString(Url.Action("ReportDesigner", "Demos"), Context.Request, "theme", "onlyview"))
+    );
+</script>

@@ -1,0 +1,1 @@
+This demo illustrates the anchoring of report controls. Toggle the Landscape option in the Parameters panel to generate a different report layout.

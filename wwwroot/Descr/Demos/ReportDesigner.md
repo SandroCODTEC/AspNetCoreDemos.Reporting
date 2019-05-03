@@ -1,0 +1,1 @@
+This demo illustrates how to use the Web Report Designer. It allows end-users to customize the report's structure within modern browsers without having to install additional software.

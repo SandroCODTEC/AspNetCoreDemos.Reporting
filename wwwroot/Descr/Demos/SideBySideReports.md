@@ -1,0 +1,1 @@
+This demo illustrates a report with [side-by-side](http://help.devexpress.com/#XtraReports/CustomDocument5315) comparison of various employee metrics. Two [Subreport](https://documentation.devexpress.com/#XtraReports/CustomDocument5175) controls are used to inject data from separate employee reports into a single composite document.

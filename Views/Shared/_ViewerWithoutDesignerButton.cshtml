@@ -1,0 +1,15 @@
+﻿@model string
+
+<script src="@Url.Content("~/js/report-viewer.js")"></script>
+<script type="text/javascript">
+    function BeforeRender(s, e) {
+        disposeOnUnload(s, e);
+    }
+</script>
+<div class="wrapper">
+    @(Html.DevExpress().WebDocumentViewer("viewer")
+                                .ClientSideEvents(events => {
+                                    events.BeforeRender("BeforeRender");
+                                })
+                                .Height("1000px").Bind(Model))
+</div>

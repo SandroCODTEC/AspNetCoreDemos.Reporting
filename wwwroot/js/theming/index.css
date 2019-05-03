@@ -1,0 +1,25 @@
+    .color-scheme-chooser-theme {
+        padding-left: 15px;
+    }
+
+    .color-scheme-chooser-theme img,
+    .color-scheme-chooser-theme span {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .color-scheme-chooser-theme span {
+        padding-left: 9px;
+    }
+
+    .color-scheme-chooser-theme span.dx-textbox {
+        padding-left: 0;
+    }
+
+    .dx-accordion-empty ~ .dx-field-value {
+        display: none;
+    }
+
+    #tabpanel-container .dx-texteditor.dx-state-readonly.dx-widget {
+        opacity: 1;
+    }
