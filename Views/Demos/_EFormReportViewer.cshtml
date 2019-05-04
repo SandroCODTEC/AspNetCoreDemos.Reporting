@@ -10,24 +10,33 @@
     function editingFieldsHighlightingEnable(s, e) {
         e.reportPreview.editingFieldsHighlighted(true);
     }
+    function ReportDesigner_CustomizeLocalization(s, e) {
+        alert("Translation");
+    s.UpdateLocalization({
+        "Unchecked": "Your Unchecked translation",
+        "Checked": "Your  Checked translation",
+        "Indeterminate": "Your Indeterminate translation",
+        "Search result" : "Resultado da pesquisa"
+    });
+}
 </script>
 <div class="wrapper">
-    @Html.DevExpress().ReportDesigner(settings =>
-{
-    settings.Name = "ReportDesigner";
-    settings.ClientSideEvents.CustomizeLocalization += "function(s) { " +
+    @(Html.DevExpress().WebDocumentViewer("viewer")
+        .ClientSideEvents(events =>
+        {
+            //events.CustomizeLocalization("ReportDesigner_CustomizeLocalization");
+            events.CustomizeLocalization(
+            "function(s) { " +
+            "alert('Translation');" + 
         "s.UpdateLocalization({" +
             "'Properties': 'Propriedades'," +
             "'Data Source': 'Origem dos dados'," +
-            "'Data Member': 'Membro de dados'});}";
-}).Bind(new XtraReport()).GetHtml()
+            "'Search result' : 'Resultado da pesquisa'," + 
+            "'Data Member': 'Membro de dados'});}");
 
-    @*@(Html.DevExpress().WebDocumentViewer("viewer")
-        .ClientSideEvents(events =>
-        {
             events.BeforeRender("eformBeforeRender");
         }).Height("1000px")
-        .Bind(Model))*@
+        .Bind(Model))
 </div>
 
 @await Html.PartialAsync("_ReportDesignerButton", Model)
