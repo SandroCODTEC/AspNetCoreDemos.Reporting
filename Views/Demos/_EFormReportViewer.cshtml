@@ -12,10 +12,22 @@
     }
 </script>
 <div class="wrapper">
-    @(Html.DevExpress().WebDocumentViewer("viewer")
-                            .ClientSideEvents(events => {
-                                events.BeforeRender("eformBeforeRender");
-                            }).Height("1000px").Bind(Model))
+    @Html.DevExpress().ReportDesigner(settings =>
+{
+    settings.Name = "ReportDesigner";
+    settings.ClientSideEvents.CustomizeLocalization += "function(s) { " +
+        "s.UpdateLocalization({" +
+            "'Properties': 'Propriedades'," +
+            "'Data Source': 'Origem dos dados'," +
+            "'Data Member': 'Membro de dados'});}";
+}).Bind(new XtraReport()).GetHtml()
+
+    @*@(Html.DevExpress().WebDocumentViewer("viewer")
+        .ClientSideEvents(events =>
+        {
+            events.BeforeRender("eformBeforeRender");
+        }).Height("1000px")
+        .Bind(Model))*@
 </div>
 
 @await Html.PartialAsync("_ReportDesignerButton", Model)
