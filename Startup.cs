@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
 using AspNetCoreDemos.DemoShell;
 using AspNetCoreDemos.Reporting.Services;
@@ -10,6 +11,7 @@ using DevExpress.XtraReports.Web.Extensions;
 using DevExpress.XtraReports.Web.WebDocumentViewer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -29,6 +31,7 @@ namespace AspNetCoreDemos.Reporting {
         public IHostingEnvironment HostingEnvironment { get; set; }
         public void ConfigureServices(IServiceCollection services) {
             services.AddDevExpressControls();
+
             var reportsCacheCleanerSettings = new CacheCleanerSettings(TimeSpan.FromMinutes(1), TimeSpan.FromMinutes(1), TimeSpan.FromMinutes(1), TimeSpan.FromMinutes(1));
             services
                 .AddSingleton<ICachedReportSourceWebResolver, DemoCachedReportSourceWebResolver>()
@@ -64,6 +67,21 @@ namespace AspNetCoreDemos.Reporting {
             app.UseStaticFiles();
             app.UseSession();
             app.UseDevExpressControls();
+
+            var supportedCultures = new[] {
+                new CultureInfo("pt"),
+            };
+
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("pt"),
+                // Formatting numbers, dates, etc.
+                SupportedCultures = supportedCultures,
+                // UI strings that we have localized.
+                SupportedUICultures = supportedCultures
+            });
+
+
             var reportingLogger = loggerfactory.CreateLogger("Reporting");
             Action<Exception, string> logError = (ex, message) => {
                 var errorString = string.Format("[{0}]: Exception occurred. Message: '{1}'. Exception Details:\r\n{2}", DateTime.Now, message, ex);
